@@ -1,14 +1,32 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>ShopNew</title>
+    <title>Мой магазин</title>
     <%= csrf_meta_tags %>
 
     <%= stylesheet_link_tag    'default', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'default', 'data-turbolinks-track': 'reload' %>
+     <%= csrf_meta_tag %>
+
   </head>
 
 	<body class='<%= controller.controller_name %>'>
-    <%= yield %>
-  </body>
+	<div id="banner">
+		 <%= image_tag("https://cdn.codementor.io/assets/topic/category_header/ruby-on-rails-bc9ab2af8d92eb4e7eb3211d548a09ad.png") %>
+		 <%= @page_title || "Магазин от группы МИ-16" %>
+		 </div>
+		 <div id="columns">
+	<div id="side">
+		 <ul>
+		 <li><a href="http://localhost:3000">Домой</a></li>
+		  <li><a href="http://localhost:3000/products">Продукты</a></li>
+		  <li><a href="http://localhost:3000/products/new">Добавить продукт</a></li>
+
+		 </ul>
+	 </div>
+		 <div id="main">
+			 <%= yield %>
+		 </div>
+	 </div> 
+	  </body>
 </html>

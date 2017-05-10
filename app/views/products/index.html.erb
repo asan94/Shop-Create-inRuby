@@ -1,8 +1,10 @@
-<h1>Listing products</h1>
+<h1>Список товаров</h1>
 <table>
 <% @products.each do |product| %>
  <tr class="<%= cycle('list_line_odd', 'list_line_even') %>">
  <td>
+ <%= stylesheet_link_tag "products.scss" %>
+
  <%= image_tag(product.image_url, class: 'list_image') %>
  </td>
  <td class="list_description">
@@ -13,13 +15,13 @@
  </dl>
  </td>
  <td class="list_actions">
- <%= link_to 'Show', product %><br/>
- <%= link_to 'Edit', edit_product_path(product) %><br/>
- <%= link_to 'Destroy', product, method: :delete,
- data: { confirm: 'Are you sure?' } %>
+ <%= link_to 'Показать', product %><br/>
+ <%= link_to 'Редактировать', edit_product_path(product) %><br/>
+ <%= link_to 'Удалить', product, method: :delete,
+ data: { confirm: 'Вы согласны?' } %>
  </td>
  </tr>
 <% end %>
 </table>
 <br />
-<%= link_to 'New product', new_product_path %>
+<%= link_to 'Новый товар', new_product_path %>
