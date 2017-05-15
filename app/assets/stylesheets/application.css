@@ -13,8 +13,9 @@
  *= require_tree .
  *= require_self
 */
+
 #banner {
- background: #9c9;
+ background: ;
  padding: 10px;
  border-bottom: 2px solid;
  font: small-caps 40px/40px "Times New Roman", serif;
@@ -36,7 +37,7 @@
 }
 
 #columns {
- background: #141;
+ background: #d4d49b;
 
  #main {
  margin-left: 17em;
