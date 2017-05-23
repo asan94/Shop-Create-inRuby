@@ -13,20 +13,104 @@
  *= require_tree .
  *= require_self
 */
-
-#banner {
- background: ;
- padding: 10px;
- border-bottom: 2px solid;
- font: small-caps 40px/40px "Times New Roman", serif;
- color: #282;
- text-align: center;
-
- img {
- float: left;
- }
+body {
+	    margin: 0;
+		font-family: 'Play', sans-serif;
 }
 
+ p, ol, ul, td {
+	 margin:0;
+ }
+.clearfix {
+	clear: both;
+}
+#banner {
+ background: ;
+padding: 15px 10px 5px 10px;
+ border-bottom: 2px solid;
+ font: small-caps 30px/40px "Times New Roman", serif;
+     color: #f44336;
+     background: #252525;
+font-family: 'Press Start 2P', cursive;
+}
+
+#banner img {
+  width: 57px;
+    vertical-align: middle;
+    margin-right: -13px;
+    position: relative;
+    top: -6px;
+ }
+ 
+h2 {
+	margin: 0;
+	padding: 10px 0;
+}
+ 
+ 
+ #side {
+      background: rgb(162, 20, 10);
+ }
+ #side li {
+    list-style: none; 
+	float: left;
+	padding: 10px;
+ }
+ #side li a {
+   color: #fff;
+ }
+ #side li a:hover {
+   background: none;
+ }
+ 
+ #main {
+	       background: #fff;
+		   padding: 10px 50px;
+ }
+ 
+ table {
+	     width: 100%;
+ }
+ .products table tr td {
+    padding: 5px;
+    vertical-align: top;
+    width: auto;
+    display: block;
+ }
+.products .list_line_even, .products .list_line_odd {
+    background: #ffffff;
+    box-shadow: 0 0 7px #999;
+    -webkit-box-shadow: 0 0 7px #999;
+    -moz-box-shadow: 0 0 7px #999;
+    -o-box-shadow: 0 0 7px #999;
+    padding: 10px;
+	    display: block;
+		position: relative;
+		margin: 10px 0;
+		width: 100%;
+	
+ }
+ 
+ .products .list_actions {
+	 position:absolute;
+	 right: 0;
+	 top:0;
+ }
+
+ .store .entry .price {
+	 display: block;
+ }
+ .store .entry h3 {
+	 margin-left: 0;
+ }
+ .store .entry {
+    overflow: auto;
+    margin-top: 1em;
+    border-bottom: 1px dotted #77d;
+    min-height: 100px;
+    padding: 10px;
+ }
+ 
 #notice {
  color: #000 !important;
  border: 2px solid red;

@@ -3,7 +3,7 @@
   <head>
     <title>Мой магазин</title>
     <%= csrf_meta_tags %>
-
+<link href="https://fonts.googleapis.com/css?family=Comfortaa|Play|Press+Start+2P" rel="stylesheet">
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
      <%= csrf_meta_tag %>
@@ -23,6 +23,7 @@
 		  <li><a href="http://localhost:3000/products/new">Добавить продукт</a></li>
 
 		 </ul>
+		 <div class="clearfix"></div>
 	 </div>
 		 <div id="main">
 			 <%= yield %>
